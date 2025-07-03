@@ -41,12 +41,39 @@
       margin: 1rem auto;
       width: 150px;
       height: 150px;
+      
+      .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.galeria img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+.galeria img:hover {
+  transform: scale(1.05);
+}
     }
   </style>
 </head>
 <body>
   <header>
     <h1>♪ Celebrar a Vida ao Som do Coração ♬</h1>
+    <div class="galeria">
+  <img src="foto1.jpg" alt="Mazé 1">
+  <img src="foto2.jpg" alt="Mazé 2">
+  <img src="foto3.jpg" alt="Mazé 3">
+  <img src="foto4.jpg" alt="Mazé 4">
+  <img src="foto5.jpg" alt="Mazé 5">
+  <img src="foto6.jpg" alt="Mazé 6">
+</div>
     <p>Convite especial de 60 anos de Mazé Santos</p>
   </header>
 
