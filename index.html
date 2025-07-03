@@ -38,6 +38,28 @@
       position: relative;
       width: 100%;
       margin: 0 auto;
+      
+      .carrossel::before,
+      .carrossel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.carrossel::before {
+  left: 0;
+  background: linear-gradient(to right, #fffaf4 0%, transparent 100%);
+}
+
+.carrossel::after {
+  right: 0;
+  background: linear-gradient(to left, #fffaf4 0%, transparent 100%);
+}
+
     }
 
 .faixa {
