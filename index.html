@@ -79,13 +79,15 @@
 
     .faixa {
       display: flex;
-      animation: deslizar 15s linear infinite;
+      width: max-content;
+      animation: deslizar 30s linear infinite;
       gap: 0.8rem;
     }
 
     .faixa img {
       width: 140px;
       height: 180px;
+      min-width: 140px;
       object-fit: cover;
       border-radius: 12px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.2);
@@ -152,6 +154,7 @@
       .faixa img {
         width: 100px;
         height: 130px;
+        min-width: 100px;
       }
 
       .imagem-principal img.retangular {
