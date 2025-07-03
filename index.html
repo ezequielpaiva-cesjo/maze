@@ -87,4 +87,148 @@
     }
 
     .faixa {
-      displa
+      display: flex;
+      animation: deslizar 15s linear infinite;
+      gap: 0.8rem;
+    }
+
+    .faixa img {
+      width: 140px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      flex-shrink: 0;
+    }
+
+    @keyframes deslizar {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    section {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+      color: #b30059;
+      margin-bottom: 0.5rem;
+    }
+
+    section p {
+      text-align: justify;
+    }
+
+    .valores ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .valores li {
+      padding: 6px 0;
+      font-size: 1.05rem;
+    }
+
+    .qr {
+      display: block;
+      margin: 1rem auto;
+      width: 150px;
+      height: 150px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: #777;
+      font-size: 0.95rem;
+    }
+
+    footer img {
+      display: block;
+      margin: 0 auto 0.5rem;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 600px) {
+      .faixa img {
+        width: 100px;
+        height: 130px;
+      }
+
+      .imagem-principal img.retangular {
+        width: 160px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>♪ Celebrar a Vida ao Som do Coração ♬</h1>
+    <div class="imagem-principal">
+      <img src="fotoidade.jpg" alt="Mazé comemorando 60 anos com alegria" class="circular">
+      <img src="foto1.jpg" alt="Mazé sorrindo com vestido rosa claro" class="retangular">
+      <h2>Convite especial de 60 anos de Mazé Santos</h2>
+    </div>
+    <div class="carrossel">
+      <div class="faixa">
+        <img src="foto2.jpg" alt="Mazé sorrindo com amigas">
+        <img src="foto3.jpg" alt="Mazé com sua família">
+        <img src="foto4.jpg" alt="Mazé em um momento especial">
+        <img src="foto5.jpg" alt="Mazé em viagem">
+        <img src="foto6.jpg" alt="Mazé celebrando">
+        <img src="foto7.jpg" alt="Mazé com flores">
+        <img src="foto8.jpg" alt="Mazé abraçando amigos">
+        <img src="foto9.jpg" alt="Mazé em festa">
+        <img src="foto10.jpg" alt="Mazé em momento alegre">
+        <!-- Loop visual -->
+        <img src="foto2.jpg" alt="Mazé sorrindo com amigas">
+        <img src="foto3.jpg" alt="Mazé com sua família">
+        <img src="foto4.jpg" alt="Mazé em um momento especial">
+        <img src="foto5.jpg" alt="Mazé em viagem">
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <p>Com alegria, convido você e sua família para celebrarem comigo meus <strong>60 anos de vida</strong>! 🎉</p>
+    <p>Ficarei muito feliz com a presença de vocês 💖</p>
+    <p>
+      <strong>📅 Data:</strong> 02 de agosto de 2025<br>
+      <strong>📍 Local:</strong> Casa do Léo (Planaltina)<br>
+      <strong>⏰ Horário:</strong> 18:00
+    </p>
+  </section>
+
+  <section class="valores">
+    <h2>💌 Adesão</h2>
+    <p>A festa será por adesão. Cada família colaborará com um valor conforme o número de pessoas:</p>
+    <p><strong>Envie até 25/07/2025</strong> via PIX para:</p>
+    <p><strong>mazefaz60anos@gmail.com</strong></p>
+    <img class="qr" src="qrcode.png" alt="QR Code para pagamento via PIX">
+
+    <ul>
+      <li>2 pessoas - R$ 60,00</li>
+      <li>3 pessoas - R$ 90,00</li>
+      <li>4 pessoas - R$ 120,00</li>
+      <li>5 pessoas - R$ 150,00</li>
+    </ul>
+
+    <h2>🎁 Presentes</h2>
+    <p>Caso queiram me presentear, aceito com carinho via a mesma chave PIX 💝</p>
+  </section>
+
+  <footer>
+    <img src="fotoidade.jpg" alt="Mazé sorrindo no rodapé" width="90">
+    <p>Com carinho, Mazé Santos 💕</p>
+  </footer>
+</body>
+</html>
