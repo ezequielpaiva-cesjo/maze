@@ -16,40 +16,50 @@
     header {
       text-align: center;
       margin-bottom: 2rem;
-    .imagem-principal {
+
+.imagem-principal {
   text-align: center;
   margin: 1.5rem 0 1rem;
 }
 .imagem-principal img {
   width: 200px;
-  height: auto;
   border-radius: 15px;
   box-shadow: 0 6px 12px rgba(0,0,0,0.25);
 }
 
-.galeria-horizontal {
+/* Carrossel automático */
+.carrossel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.faixa {
   display: flex;
-  overflow-x: auto;
-  gap: 0.8rem;
-  padding: 0.5rem 0 1rem;
-  scrollbar-width: none;
+  animation: deslizar 25s linear infinite;
 }
-.galeria-horizontal::-webkit-scrollbar {
-  display: none;
-}
-.galeria-horizontal img {
-  flex: 0 0 auto;
+.faixa img {
   width: 110px;
   height: 110px;
   object-fit: cover;
+  margin-right: 0.8rem;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.12);
-  transition: transform 0.3s ease;
-}
-.galeria-horizontal img:hover {
-  transform: scale(1.05);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex-shrink: 0;
 }
 
+@keyframes deslizar {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+      
     }
     h1 {
       color: #b30059;
